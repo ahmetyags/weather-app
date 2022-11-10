@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./css/icons/favicon.ico" type="image/x-icon">
+  <script src="./js/aes.js"></script>
+  <script src="./js/Extentions.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <section class="top-banner">
+    <div class="m-3">
+      <div class="d-flex justify-content-center">
+        <img src="./css/atmospheric-pressure-g796443779_1280.png" alt="" class="nav__logo" id="logo" />
+        <h1 class="heading text-white pe-3 ps-3 bg-secondary rounded mt-3">
+          Weather App</h1>
+        <!-- <img src="./css/atmospheric-pressure-g796443779_1280.png" alt="" class="nav__logo" id="logo" /> -->
+      </div>
+      <div class="input-city ">
+        <input type="text" placeholder="Search for a city" autofocus>
+        <button type="submit">SUBMIT</button>
+        <span class="msg"></span>
+      </div>
+    </div>
+  </section>
+  <section class="city-section">
+    <div class="">
+      <ul class="cities">
+      </ul>
+    </div>
+  </section>
+  <script src="app.js"></script>
+</body>
+
+</html>

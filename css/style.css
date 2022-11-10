@@ -1,0 +1,193 @@
+/* RESET STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --bg_main: #0c6396;
+  --text_light: #fff;
+  --text_med: #53627c;
+  --text_dark: #1e2432;
+  --red: #ff1e42;
+  --darkred: #c3112d;
+  --orange: #ff8c00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+}
+
+body {
+  background-image: url(./background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+/* SECTION #1
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.top-banner {
+  color: var(--text_light);
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 2.8rem;
+  letter-spacing: 0.07em;
+  /* position: relative; */
+  margin-right: 11rem;
+}
+
+.top-banner .input-city {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.top-banner .input-city input {
+  font-size: 2rem;
+  height: 40px;
+  padding: 5px;
+  border-bottom: 1px solid;
+}
+
+.top-banner .input-city input::placeholder {
+  color: #c9cdd3;
+}
+
+.top-banner .input-city button {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 10px;
+  margin-left: 15px;
+  border-radius: 5px;
+  background: var(--bg_main);
+}
+
+.top-banner .input-city button:active {
+  transform: scale(1.1);
+}
+
+.top-banner .input-city .msg {
+  position: absolute;
+  bottom: -40px;
+  max-width: 450px;
+  min-height: 40px;
+  font-size: 1.5rem;
+  color: red;
+  font-weight: 600;
+  margin-right: 6rem;
+}
+
+/* SECTION #2
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.city-section {
+  padding: 2rem;
+}
+
+.city-section .cities {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  grid-gap: 2rem;
+  list-style-type: none;
+  align-items: center;
+}
+
+#logo {
+  margin-top: 1rem;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  /* padding: 1rem; */
+  /* margin-left: 10px; */
+  margin-right: 10px;
+}
+
+.card {
+  width: 15rem;
+  text-align: center;
+  background-color: #e3e7ef;
+  box-shadow: 2px 2px 5px 5px rgba(255, 255, 255, 1.2);
+  border: #e3e7ef;
+  font-size: large;
+}
+
+@media screen and (max-width: 550px) {
+  .heading {
+    font-size: 2rem;
+    letter-spacing: 0.01em;
+  }
+
+  .top-banner .input-city input {
+    font-size: 1.2rem;
+    padding: 2px;
+  }
+
+  .top-banner .input-city button {
+    font-size: 1rem;
+    padding: 7px;
+    margin-left: 10px;
+  }
+
+  .top-banner .input-city .msg {
+    font-size: 1rem;
+  }
+
+  /* SECTION #2
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .city-section {
+    padding: 1rem;
+  }
+
+  .card {
+    width: 13rem;
+  }
+  .city-section .cities {
+    flex-direction: column;
+  }
+
+  #logo {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .heading {
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+  }
+
+  .top-banner .input-city input {
+    font-size: 1rem;
+  }
+
+  .top-banner .input-city button {
+    font-size: 1rem;
+    padding: 5px;
+    margin-left: 5px;
+  }
+
+  .top-banner .input-city .msg {
+    font-size: 0.6rem;
+  }
+  .card {
+    width: 11rem;
+  }
+}
